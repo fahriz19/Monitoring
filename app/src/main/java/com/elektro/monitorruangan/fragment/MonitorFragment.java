@@ -45,7 +45,6 @@ public class MonitorFragment extends Fragment {
         View view = inflater.inflate(R.layout.fragment_monitor, container, false);
         gridDosen = (GridView) view.findViewById(R.id.list_dosen);
         getData();
-
         return view;
     }
 
