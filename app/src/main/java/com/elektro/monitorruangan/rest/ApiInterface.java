@@ -14,7 +14,6 @@ import retrofit2.http.GET;
  */
 
 public interface ApiInterface {
-        @GET("monitor.php")
+    @GET("monitor.php")
     Call<ResponsModel> getDosen();
-
 }

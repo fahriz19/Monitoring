@@ -6,17 +6,17 @@ import com.google.gson.annotations.SerializedName;
 
 public class Dosen {
 
-//    @SerializedName("id")
-//    @Expose
+    @SerializedName("id")
+    @Expose
     private String id;
-//    @SerializedName("nama")
-//    @Expose
+    @SerializedName("nama")
+    @Expose
     private String nama;
-//    @SerializedName("status")
-//    @Expose
+    @SerializedName("status")
+    @Expose
     private String status;
-//    @SerializedName("waktu")
-//    @Expose
+    @SerializedName("waktu")
+    @Expose
     private String waktu;
 
     public String getId() {

@@ -20,9 +20,6 @@ import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
 
-    private static final String URL = "http://pramudyo.com/monitor.php";
-
-
     private BottomNavigationView.OnNavigationItemSelectedListener mOnNavigationItemSelectedListener
             = new BottomNavigationView.OnNavigationItemSelectedListener() {
 
@@ -31,10 +28,10 @@ public class MainActivity extends AppCompatActivity {
             FragmentManager manager = getSupportFragmentManager();
             switch (item.getItemId()) {
                 case R.id.navigation_home:
-                    manager.beginTransaction().replace(R.id.content_frame, new MonitorFragment()).commit();
+                    manager.beginTransaction().replace(R.id.content_frame, new ListDosenFragment()).commit();
                     return true;
                 case R.id.navigation_listdosen:
-                    manager.beginTransaction().replace(R.id.content_frame, new ListDosenFragment()).commit();
+                    manager.beginTransaction().replace(R.id.content_frame, new MonitorFragment()).commit();
                     return true;
 
             }
@@ -47,11 +44,8 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
         BottomNavigationView navigation = (BottomNavigationView) findViewById(R.id.navigation);
         navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
-
-
     }
 
 }

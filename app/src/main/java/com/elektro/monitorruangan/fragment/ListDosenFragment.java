@@ -67,11 +67,9 @@ public class ListDosenFragment extends Fragment {
 
         manager = new LinearLayoutManager(getContext());
         gridView.setLayoutManager(manager);
-
-
         dialog.setMessage("Loading...");
         dialog.setCancelable(false);
-        dialog.show();
+//        dialog.show();
 
         ApiInterface api = ApiClient.getClient().create(ApiInterface.class);
         Call<ResponsModel> getData = api.getDosen();

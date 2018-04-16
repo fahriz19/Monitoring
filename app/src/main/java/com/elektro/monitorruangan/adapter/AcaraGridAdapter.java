@@ -23,10 +23,6 @@ public class AcaraGridAdapter extends RecyclerView.Adapter<AcaraGridAdapter.Hold
     List<Dosen> list;
     MonitorFragment context;
 
-//    public AcaraGridAdapter(List<Dosen> list){
-//
-//    }
-
     public AcaraGridAdapter(MonitorFragment context, List<Dosen> list) {
         this.context = context;
         this.list = list;

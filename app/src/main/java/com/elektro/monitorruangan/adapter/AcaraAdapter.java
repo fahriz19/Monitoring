@@ -29,11 +29,8 @@ public class AcaraAdapter extends RecyclerView.Adapter<AcaraAdapter.HolderData>{
         this.list = list;
     }
 
-
-
     @Override
     public HolderData onCreateViewHolder(ViewGroup parent, int viewType) {
-
         View layout = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_acara,parent,false);
         HolderData holderData = new HolderData(layout);
 
@@ -66,15 +63,12 @@ public class AcaraAdapter extends RecyclerView.Adapter<AcaraAdapter.HolderData>{
 
         public HolderData(View itemView) {
             super(itemView);
-
             id = (TextView)itemView.findViewById(R.id.nomor);
             nama = (TextView) itemView.findViewById(R.id.nama);
             status = (TextView) itemView.findViewById(R.id.status);
             waktu = (TextView) itemView.findViewById(R.id.waktu);
 
-
-
         }
     }
-
 }
+

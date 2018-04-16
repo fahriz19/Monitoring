@@ -4,9 +4,10 @@
     android:layout_height="match_parent"
     tools:context="com.elektro.monitorruangan.fragment.MonitorFragment">
 
-
-    <android.support.v7.widget.RecyclerView
-        android:id="@+id/recycler_view"
+    <GridView
+        android:id="@+id/list_dosen"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="wrap_content">
+
+    </GridView>
 </FrameLayout>
